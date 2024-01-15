@@ -12,10 +12,10 @@ public class DragDropTest {
         open("https://the-internet.herokuapp.com/drag_and_drop");
         //sleep(2000);
     }
-    @AfterEach
+   /* @AfterEach
     void afterEach(){
        closeWindow();
-    }
+    }*/
     @Test
     void dragDropTest(){
         $("#column-a").shouldHave(text("A"));

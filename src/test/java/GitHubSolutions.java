@@ -11,7 +11,7 @@ public class GitHubSolutions {
         open("https://github.com");
         $("[aria-label='Global']").$$("ul li").findBy(text("Solutions")).hover();
         $("[href='/enterprise']").click();
-        $("html").shouldHave(text("To build, scale, and deliver secure software."));
+        $("#hero-section-brand-heading").shouldHave(text("The AI-powered"));
 
 //        sleep(5000);
     }
